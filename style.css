@@ -4,115 +4,158 @@
 }
 
 @font-face {
-  src: url("//fonts/BLESD___\ .ttf");
-  src: url("//fonts/OpenSans-Regular.ttf");
-  src: url("//fonts/OpenSans-Bold.ttf");
-  src: url("//fonts/OpenSans-Light.ttf");
-}
+  font-family: "BlessedDay";
+  src: url("fonts/BLESD.ttf");
+  }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: bold;
+  src: url("fonts/OpenSans-Bold.ttf");
+  }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  src: url("fonts/OpenSans-Light.ttf");
+  }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: normal;
+  src: url("fonts/OpenSans-Regular.ttf");
+  }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 300;
+  src: url("fonts/OpenSans-Light.ttf");
+  }
 
 body {
-  font-family: Open Sans;
+  font-family: "OpenSans";
 }
   
 .wrapper {
+  width: 962px;
   margin: 0 auto;
-  display: flex;
 }
 
 header {
   background-image: url("img/bg-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
 }
 
 .header-logo {
-  margin-left: 300px;
-  font-size: 70px;
+  font-size: 72px;
   color: white;
-  font-family: Blessed Day;
-  margin-top: 60px;
+  font-family: "BlessedDay";
+  letter-spacing: 0.5px;
 }
 
-nav {
-  margin-top: 85px;
-  margin-left: 272px;
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 65px;
 }
 
 nav a {
   font-size: 18px;
   color: white;
   text-decoration: none;
-  padding: 9px;
-  font-weight: lighter;
-}
-
-.login {
-  font-weight: bold;
+  font-weight: 400;
+  padding: 10px;
 }
 
 nav a:hover {
   border-bottom: 3px solid #1abc9c;
 }
 
-.header-sections img {
-  margin-left: 300px;
+nav a:active {
+  color: gray;
 }
 
-.header-sections {
-  display: flex;
-  margin-top: 200px;
-}
-
-.header-content {
+.login {
+  text-decoration: none;
+  font-size: 14;
+  font-weight: bold;
   color: white;
-  margin-top: 55px;
+  padding-right: 0;
 }
 
-.header-content h1 {
-  font-weight: lighter;
+.login:active {
+  color: gray;
+}
+
+.header-section {
+  display: flex;
+  padding-top: 194px;
+}
+
+.header-section img {
+  margin-bottom: 20px;
+  width: 421px;
+  height: 549px;
+}
+
+.slider-header {
+  color: white;
+  padding-top: 52px;
+  padding-left: 38px;
+}
+
+.slider-header h2 {
   font-size: 30px;
-  letter-spacing: 1px;
-  margin-left: 42px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
 }
 
 .header-text {
-  text-align: left;
-  width: 490px;
-  height: 100px;
+  width: 500px;
   font-size: 18px;
-  margin-top: 38px;
-  margin-left: 43px;
-  font-weight: 300;
+  font-weight: 400;
+  padding-top: 35px;
+  padding-left: 4px; 
+}
+
+.header-text p {
+  line-height: 1.7em;
 }
 
 .buttons-sections {
   display: flex;
-  margin-top: 50px;
-  margin-left: 50px;
+  padding-top: 64px;
+  padding-left: 5px;
 }
 
 .separator {
+  margin-top: 9px;
+  margin-left: 2px;
   position: relative;
-  margin-top: 10px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
   background: white;
   color: black;
   text-align: center;
-  font-weight: 500;
-}
-
-.separator p {
-  margin-top: 2px;
+  font-weight: normal;
+  font-size: 15px;
 }
 
 .button {
   padding: 20px 20px;
-  width: 170px;
+  width: 172px;
+  height: 60px;
   border-radius: 5%;
   font-size: 18px;
-  margin: -5px;
+  letter-spacing: 0.6px;
+}
+
+.button.button-position {
+  margin: -6px;
 }
 
 .button.green-button {
@@ -136,37 +179,331 @@ nav a:hover {
 }
 
 .about-us-section {
-  text-align: justify;
-  font-weight: lighter;
-  width: 680px;
-  margin-left: 220px;
-  padding: 130px 0 130px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 110px;
+  padding-bottom: 128px;
+}
+
+.about-us-text {
+  width: 600px;
+}
+
+.about-us-section h1 {
+  font-size: 24px;
+  font-weight: normal;
 }
 
 .about-us-section p {
   font-size: 18px;
-  margin-top: 25px;
-  margin-left: 70px;
   font-weight: 400;
-}
-
-.about-us-section h2 {
-  margin-top: 10px;
-  margin-left: 75px;
-  font-weight: 700;
-  font-size: 24px;
-  font-weight: 400;
+  line-height: 1.7em;
+  padding-top: 15px;
 }
 
 .shape {
-  margin-top: 150px;
-  margin-left: 120px;
+  padding-left: 99px;
+  padding-bottom: 13px;
 }
 
 .shape-small {
-  margin-top: 210px;
-  margin-left: 20px;
+  padding-top: 51px;
+  padding-right: 3px;
 }
+
+.container {
+  background-color: #f6f6f6;
+}
+
+.service-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 76px;
+  padding-bottom: 93px;
+}
+
+.service {
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 19px;
+}
+
+.service p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  padding-top: 15px;
+}
+
+.service.browser h2 {
+  padding-right: 27px;
+}
+
+.service.browser img {
+  padding-right: 27px;
+}
+
+.service.love img {
+  padding-right: 11px;
+}
+
+.service.responsive h2 {
+  padding-left: 10px;
+}
+
+.service.responsive img {
+  padding-left: 4px;
+}
+
+.features-container {
+  background-image: url("img/bg-features.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 523px;
+}
+
+.features-header {
+  text-align: center;
+  color: white;
+  padding-top: 55px;
+  padding-left: 35px;
+}
+
+.features-header h1 {
+  font-weight: 500;
+  font-size: 30px;
+  letter-spacing: 0.4px;
+}
+
+.features-header p {
+  font-weight: 400;
+  font-size: 17px;
+  padding-top: 3px;
+  padding-left: 8px;
+  letter-spacing: 0.4px;
+}
+
+.macbook-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.macbook {
+  padding-top: 107px;
+  padding-left: 11px;
+}
+
+.arrow-left {
+  padding-bottom: 169px;
+}
+
+.arrow-right {
+  padding-bottom: 169px;
+}
+
+.testimonals-container {
+  display: flex;
+  justify-content:space-between;
+  padding-top: 71px;
+}
+.testimonals-container.middle {
+  padding-top: 39px;
+}
+
+.testimonals-container.bottom {
+  padding-top: 39px;
+  padding-bottom: 143px;
+}
+
+.testimonals-section {
+  display: flex;
+}
+
+.teatimonals-header-text {
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 189px;
+  padding-right: 13px;
+  letter-spacing: 0.5px;
+}
+
+.testimonals-text {
+  width: 348px;
+}
+
+.t-text {
+  font-size: 24px;
+  font-weight: 400;
+  padding-top: 21px;
+  padding-left: 26px;
+  letter-spacing: 0.3px;
+}
+
+.p-text {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 27px;
+  padding-left: 25px;
+}
+
+.contact-container {
+  background: #34495e;
+}
+
+.contact-section {
+  display: flex;
+  padding-top: 104px;
+  padding-bottom: 119px;
+}
+
+.contact-info {
+  color: white;
+}
+
+.contact-info h2 {
+  font-weight: 400;
+  letter-spacing: 0.1px;
+}
+
+.contact-info p {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  line-height: 1.6;
+  padding-top: 18px;
+  width: 453px;
+}
+
+.contact-info-item {
+  display: flex;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.contact-info-item.map {
+  padding-top: 41px;
+}
+
+.contact-info-item.call {
+  padding-top: 17px;
+}
+
+.contact-info-item.mail {
+  padding-top: 12px;
+}
+
+.contact-info-item img {
+  padding-right: 8px;
+}
+
+.mail-img {
+  margin-left: -10px;
+}
+
+.input-section {
+  padding-left: 38px;
+  padding-top: 8px;
+}
+
+.header-input {
+  display: flex;
+}
+
+.input {
+  background: #5d6d7e;
+  color: #959ea8;
+  font-size: 13px;
+  font-weight: 500;
+  border: none;
+  border-radius: 3%;
+}
+
+.input.style-name {
+  width: 210px;
+  height: 42px;
+}
+
+.input.style-email {
+  width: 210px;
+  height: 42px;
+  margin-left: 22px;
+}
+
+.input.style-subject {
+  width: 454px;
+  height: 42px;
+  margin-top: 16px;
+}
+
+.input-select {
+  display: flex;
+}
+
+select {
+  position: absolute;
+  margin-top: 23px;
+  margin-left: 425px;
+  height: 31px;
+  width: 38px;
+  background: #1abc9c;
+  border-radius: 10%;
+}
+
+.input.style-message {
+  padding: 13px 300px 125px 13px;
+  margin-top: 18px;
+}
+
+.input[type="text"] {
+  padding-left: 13px;
+  letter-spacing: 0.5px;
+}
+
+.buttons-sections.contact {
+  padding-top: 17px;
+  padding-left: 106px;
+}
+
+.button.blue-button.button-position-contact {
+  margin-left: 15px;
+}
+
+.footer-section {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding-top: 74px;
+  padding-bottom: 70px;
+  padding-right: 36px;
+  letter-spacing: 0.4px;
+}
+
+.triangle-top {
+  margin-top: -94px;
+  margin-left: 735px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 20px solid #2c3e50;
+}
+
+
+
+
+
+
+
+
 
 
 
